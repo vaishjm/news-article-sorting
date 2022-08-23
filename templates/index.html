@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Welcome To Insurance Premium Predictor</title>
+  </head>
+  <body class= "bg-dark">
+      <div class="container">
+          <div class="row">
+              <div class="card mt-50 bg-secondary text-white" style="width: 100%; height:100%">
+
+                <div class="card-header">
+                    <div class="col-12" style="text-align: center">
+                        <h5>Welcome To Insurance Premium Predictor</h5>
+                    </div>
+                </div>
+
+                <div class="card-body">
+
+                    <form method="post" accept-charset="utf-8">
+
+                        <div class="mb-3">
+                        <label for ="data" class=" form-label"> Enter the text</label>
+                        <textarea class="form-control border-black rounded-lg border self-center justify-center text-white" style="background-color: rgb(35 39 42 / 50%)"
+                    name="data" id="data" cols="80" rows="7" placeholder="Enter your Text Here" required="required"> </textarea>
+                        </div>
+
+                        <div class=" flex self-control"  style="text-align: center">
+                            <button class="btn btn-primary"  style="background-color: #474c54" onclick="send_data()">Predict Premium</button>
+                        </div>
+
+
+                    </form>
+                </div>
+
+                    <br>
+
+            <div class="row  bg-secondary text-white">
+                <div class="col-4" style="text-align: center">
+                    <h5><span id="prediction"></span></h5>
+                </div>
+
+                <div class="col-4" style="text-align: center">
+                    <h5><span id="prob"></span></h5>
+                </div>
+
+
+                <div class="col-4" style="text-align: center">
+                    <h5><span id="est"></span></h5>
+                </div>
+            </div>
+
+
+         </div>
+        </div>
+        <canvas id="myChart"></canvas>
+      </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+     <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+
+        function form_handler(event)
+        {
+            event.preventDefault();
+        }
+
+        function send_data()
+        {
+            document.querySelector('form').addEventListener('submit', form_handler);
+
+            var fd = new FormData(document.querySelector('form'));
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.open('post', '/predict', true);
+            document.getElementById("prediction").innerHTML = "Wait! Predicting Premium..."
+
+            xhr.onreadystatechange = function()
+            {
+                if(xhr.readyState == XMLHttpRequest.DONE)
+                {
+                    var user = JSON.parse(xhr.responseText);
+                    document.getElementById("prediction").innerHTML = "Premium: " + user.category;
+                    document.getElementById("prob").innerHTML = "Probability: " + user.probability +"%";
+                    document.getElementById("est").innerHTML = "Execution time: " + user.execution_time.toFixed(2);
+                    var dt =  user.y ;
+                    console.log(dt);
+                    createChart(dt)
+                }
+
+            }
+            function createChart(chart_data){
+                var chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels:['business', 'entertainment' , 'politics', 'sport', 'tech'],
+                        datasets: [{
+                            label: "Graph",
+                            borderColor: 'rgb(255, 0, 100)',
+                            data: chart_data,
+                            backgroundColor:'blue',
+                            borderWidth: 1,
+                            barThickness : 16
+                        }]
+                       },
+
+
+            scales: {
+
+                yAxes: [{
+                    ticks: {
+                        fontColor: "blue",
+                        fontSize: 18,
+                        stepSize: 1,
+                        beginAtZero: true
+                    }
+                }],
+                xAxes: [{
+                    ticks: {
+                        fontColor: "blue",
+                        fontSize: 14,
+                        stepSize: 1,
+                        beginAtZero: true
+                    }
+                }]
+            }
+
+
+
+
+                });
+            }
+
+            xhr.onload = function(){};
+            xhr.send(fd);
+
+        }
+
+
+
+
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

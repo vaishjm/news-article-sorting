@@ -1,0 +1,194 @@
+2022-08-22 18:32:23 INFO-News Articles Sorting ready for use!
+2022-08-22 18:32:23 INFO-Parameters loaded successfully.
+2022-08-22 18:32:23 ERROR-[Errno 2] No such file or directory: 'lr_model.pkl'
+Traceback (most recent call last):
+  File "C:\Users\Vaishnavi\PythonProjects\project1\app.py", line 35, in <module>
+    model = joblib.load("lr_model.pkl")
+  File "C:\Users\Vaishnavi\miniconda3\lib\site-packages\joblib\numpy_pickle.py", line 579, in load
+    with open(filename, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'lr_model.pkl'
+2022-08-22 18:32:24 INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-08-22 18:32:24 INFO-[33mPress CTRL+C to quit[0m
+2022-08-22 18:32:24 INFO- * Restarting with stat
+2022-08-22 18:33:54 INFO-News Articles Sorting ready for use!
+2022-08-22 18:33:54 INFO-Parameters loaded successfully.
+2022-08-22 18:33:54 ERROR-[Errno 2] No such file or directory: 'lr_model.pkl'
+Traceback (most recent call last):
+  File "C:\Users\Vaishnavi\PythonProjects\project1\app.py", line 35, in <module>
+    model = joblib.load("lr_model.pkl")
+  File "C:\Users\Vaishnavi\miniconda3\lib\site-packages\joblib\numpy_pickle.py", line 579, in load
+    with open(filename, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'lr_model.pkl'
+2022-08-22 18:33:54 WARNING- * Debugger is active!
+2022-08-22 18:33:54 INFO- * Debugger PIN: 598-526-621
+2022-08-22 18:33:55 INFO-127.0.0.1 - - [22/Aug/2022 18:33:55] "GET / HTTP/1.1" 200 -
+2022-08-22 18:33:55 INFO-127.0.0.1 - - [22/Aug/2022 18:33:55] "GET / HTTP/1.1" 200 -
+2022-08-22 18:34:17 ERROR-'LazyCorpusLoader' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\Vaishnavi\PythonProjects\project1\app.py", line 69, in predict
+    text_processed = text_preprocess(text)
+  File "C:\Users\Vaishnavi\PythonProjects\project1\app.py", line 98, in text_preprocess
+    text = lemmatize(text)
+  File "C:\Users\Vaishnavi\PythonProjects\project1\data_processing.py", line 43, in lemmatize
+    text = [wordnet.lemmatize(word) for word in text if word not in set(stopwords('english'))]
+  File "C:\Users\Vaishnavi\PythonProjects\project1\data_processing.py", line 43, in <listcomp>
+    text = [wordnet.lemmatize(word) for word in text if word not in set(stopwords('english'))]
+TypeError: 'LazyCorpusLoader' object is not callable
+2022-08-22 18:34:17 INFO-127.0.0.1 - - [22/Aug/2022 18:34:17] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2022-08-22 18:35:07 INFO- * Detected change in 'C:\\Users\\Vaishnavi\\PythonProjects\\project1\\app.py', reloading
+2022-08-22 18:35:09 INFO- * Restarting with stat
+2022-08-22 18:36:08 INFO-News Articles Sorting ready for use!
+2022-08-22 18:36:08 INFO-Parameters loaded successfully.
+2022-08-22 18:36:08 ERROR-[Errno 2] No such file or directory: 'lr_model.pkl'
+Traceback (most recent call last):
+  File "C:\Users\Vaishnavi\PythonProjects\project1\app.py", line 35, in <module>
+    model = joblib.load("lr_model.pkl")
+  File "C:\Users\Vaishnavi\miniconda3\lib\site-packages\joblib\numpy_pickle.py", line 579, in load
+    with open(filename, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'lr_model.pkl'
+2022-08-22 18:36:09 WARNING- * Debugger is active!
+2022-08-22 18:36:09 INFO- * Debugger PIN: 598-526-621
+2022-08-22 18:36:09 INFO-127.0.0.1 - - [22/Aug/2022 18:36:09] "GET / HTTP/1.1" 200 -
+2022-08-22 18:37:58 INFO-127.0.0.1 - - [22/Aug/2022 18:37:58] "GET / HTTP/1.1" 200 -
+2022-08-22 18:38:11 INFO-News Articles Sorting ready for use!
+2022-08-22 18:38:11 INFO-Parameters loaded successfully.
+2022-08-22 18:38:11 ERROR-[Errno 2] No such file or directory: 'lr_model.pkl'
+Traceback (most recent call last):
+  File "C:\Users\Vaishnavi\PythonProjects\project1\app.py", line 35, in <module>
+    model = joblib.load("lr_model.pkl")
+  File "C:\Users\Vaishnavi\miniconda3\lib\site-packages\joblib\numpy_pickle.py", line 579, in load
+    with open(filename, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'lr_model.pkl'
+2022-08-22 18:38:11 INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-08-22 18:38:11 INFO-[33mPress CTRL+C to quit[0m
+2022-08-22 18:38:11 INFO- * Restarting with stat
+2022-08-22 18:38:16 INFO-News Articles Sorting ready for use!
+2022-08-22 18:38:16 INFO-Parameters loaded successfully.
+2022-08-22 18:38:16 ERROR-[Errno 2] No such file or directory: 'lr_model.pkl'
+Traceback (most recent call last):
+  File "C:\Users\Vaishnavi\PythonProjects\project1\app.py", line 35, in <module>
+    model = joblib.load("lr_model.pkl")
+  File "C:\Users\Vaishnavi\miniconda3\lib\site-packages\joblib\numpy_pickle.py", line 579, in load
+    with open(filename, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'lr_model.pkl'
+2022-08-22 18:38:16 WARNING- * Debugger is active!
+2022-08-22 18:38:16 INFO- * Debugger PIN: 598-526-621
+2022-08-22 18:38:47 INFO-127.0.0.1 - - [22/Aug/2022 18:38:47] "GET / HTTP/1.1" 200 -
+2022-08-22 18:38:51 ERROR-name 'tfidf' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Vaishnavi\PythonProjects\project1\app.py", line 105, in model_predict
+    x_test = tfidf.transform([text])
+NameError: name 'tfidf' is not defined
+2022-08-22 18:38:51 ERROR-cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "C:\Users\Vaishnavi\PythonProjects\project1\app.py", line 70, in predict
+    prediction, predict_prob, probability = model_predict(text)
+TypeError: cannot unpack non-iterable NoneType object
+2022-08-22 18:38:52 INFO-127.0.0.1 - - [22/Aug/2022 18:38:52] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2022-08-22 18:39:40 INFO- * Detected change in 'C:\\Users\\Vaishnavi\\PythonProjects\\project1\\app.py', reloading
+2022-08-22 18:39:40 INFO- * Restarting with stat
+2022-08-22 18:39:58 INFO-News Articles Sorting ready for use!
+2022-08-22 18:39:59 INFO-Parameters loaded successfully.
+2022-08-22 18:39:59 INFO-Model loaded successfully!.
+2022-08-22 18:40:01 INFO-tfidf vectorization loaded successfully!.
+2022-08-22 18:40:01 INFO-label_encoder loaded successfully!.
+2022-08-22 18:40:01 INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-08-22 18:40:01 INFO-[33mPress CTRL+C to quit[0m
+2022-08-22 18:40:01 INFO- * Restarting with stat
+2022-08-22 18:40:06 INFO-News Articles Sorting ready for use!
+2022-08-22 18:40:06 INFO-Parameters loaded successfully.
+2022-08-22 18:40:06 INFO-Model loaded successfully!.
+2022-08-22 18:40:07 INFO-tfidf vectorization loaded successfully!.
+2022-08-22 18:40:07 INFO-label_encoder loaded successfully!.
+2022-08-22 18:40:07 WARNING- * Debugger is active!
+2022-08-22 18:40:07 INFO- * Debugger PIN: 598-526-621
+2022-08-22 18:40:07 INFO-127.0.0.1 - - [22/Aug/2022 18:40:07] "GET / HTTP/1.1" 200 -
+2022-08-22 18:40:32 INFO-Text representation have done.
+2022-08-22 18:40:32 INFO-Model has predicted successfully!.
+2022-08-22 18:40:33 INFO-Output have printed on webpage.
+2022-08-22 18:40:33 INFO-127.0.0.1 - - [22/Aug/2022 18:40:33] "POST /predict HTTP/1.1" 200 -
+2022-08-22 18:41:17 INFO- * Detected change in 'C:\\Users\\Vaishnavi\\PythonProjects\\project1\\app.py', reloading
+2022-08-22 18:41:18 INFO- * Restarting with stat
+2022-08-22 18:41:22 INFO-News Articles Sorting ready for use!
+2022-08-22 18:41:22 INFO-Parameters loaded successfully.
+2022-08-22 18:41:22 INFO-Model loaded successfully!.
+2022-08-22 18:41:23 INFO-tfidf vectorization loaded successfully!.
+2022-08-22 18:41:23 INFO-label_encoder loaded successfully!.
+2022-08-22 18:41:23 WARNING- * Debugger is active!
+2022-08-22 18:41:23 INFO- * Debugger PIN: 598-526-621
+2022-08-22 18:41:47 INFO-News Articles Sorting ready for use!
+2022-08-22 18:41:47 INFO-Parameters loaded successfully.
+2022-08-22 18:41:47 INFO-Model loaded successfully!.
+2022-08-22 18:41:48 INFO-tfidf vectorization loaded successfully!.
+2022-08-22 18:41:48 INFO-label_encoder loaded successfully!.
+2022-08-22 18:41:48 INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-08-22 18:41:48 INFO-[33mPress CTRL+C to quit[0m
+2022-08-22 18:41:48 INFO- * Restarting with stat
+2022-08-22 18:41:52 INFO-News Articles Sorting ready for use!
+2022-08-22 18:41:52 INFO-Parameters loaded successfully.
+2022-08-22 18:41:52 INFO-Model loaded successfully!.
+2022-08-22 18:41:54 INFO-tfidf vectorization loaded successfully!.
+2022-08-22 18:41:54 INFO-label_encoder loaded successfully!.
+2022-08-22 18:41:54 WARNING- * Debugger is active!
+2022-08-22 18:41:54 INFO- * Debugger PIN: 598-526-621
+2022-08-22 18:41:54 INFO-127.0.0.1 - - [22/Aug/2022 18:41:54] "GET / HTTP/1.1" 200 -
+2022-08-22 18:41:59 ERROR-'LazyCorpusLoader' object is not callable
+Traceback (most recent call last):
+  File "C:\Users\Vaishnavi\PythonProjects\project1\app.py", line 69, in predict
+    text_processed = text_preprocess(text)
+  File "C:\Users\Vaishnavi\PythonProjects\project1\app.py", line 98, in text_preprocess
+    text = lemmatize(text)
+  File "C:\Users\Vaishnavi\PythonProjects\project1\data_processing.py", line 43, in lemmatize
+    text = [wordnet.lemmatize(word) for word in text if word not in set(stopwords('english'))]
+  File "C:\Users\Vaishnavi\PythonProjects\project1\data_processing.py", line 43, in <listcomp>
+    text = [wordnet.lemmatize(word) for word in text if word not in set(stopwords('english'))]
+TypeError: 'LazyCorpusLoader' object is not callable
+2022-08-22 18:41:59 INFO-127.0.0.1 - - [22/Aug/2022 18:41:59] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2022-08-22 18:46:38 INFO-News Articles Sorting ready for use!
+2022-08-22 18:46:38 INFO-Parameters loaded successfully.
+2022-08-22 18:46:38 INFO-Model loaded successfully!.
+2022-08-22 18:46:39 INFO-tfidf vectorization loaded successfully!.
+2022-08-22 18:46:39 INFO-label_encoder loaded successfully!.
+2022-08-22 18:46:39 INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-08-22 18:46:39 INFO-[33mPress CTRL+C to quit[0m
+2022-08-22 18:46:39 INFO- * Restarting with stat
+2022-08-22 18:46:44 INFO-News Articles Sorting ready for use!
+2022-08-22 18:46:44 INFO-Parameters loaded successfully.
+2022-08-22 18:46:44 INFO-Model loaded successfully!.
+2022-08-22 18:46:46 INFO-tfidf vectorization loaded successfully!.
+2022-08-22 18:46:46 INFO-label_encoder loaded successfully!.
+2022-08-22 18:46:46 WARNING- * Debugger is active!
+2022-08-22 18:46:46 INFO- * Debugger PIN: 598-526-621
+2022-08-22 18:46:46 INFO-127.0.0.1 - - [22/Aug/2022 18:46:46] "GET / HTTP/1.1" 200 -
+2022-08-22 18:46:51 INFO-Text representation have done.
+2022-08-22 18:46:51 INFO-Model has predicted successfully!.
+2022-08-22 18:46:51 INFO-Output have printed on webpage.
+2022-08-22 18:46:51 INFO-127.0.0.1 - - [22/Aug/2022 18:46:51] "POST /predict HTTP/1.1" 200 -
+2022-08-22 19:27:57 INFO- * Detected change in 'C:\\Users\\Vaishnavi\\PythonProjects\\project1\\app.py', reloading
+2022-08-22 19:27:58 INFO- * Restarting with stat
+2022-08-22 19:28:44 INFO-News Articles Sorting ready for use!
+2022-08-22 19:28:44 INFO-Parameters loaded successfully.
+2022-08-22 19:28:44 INFO-Model loaded successfully!.
+2022-08-22 19:28:46 INFO-tfidf vectorization loaded successfully!.
+2022-08-22 19:28:46 INFO-label_encoder loaded successfully!.
+2022-08-22 19:28:46 INFO-[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-08-22 19:28:46 INFO-[33mPress CTRL+C to quit[0m
+2022-08-22 19:28:46 INFO- * Restarting with stat
+2022-08-22 19:28:50 INFO-News Articles Sorting ready for use!
+2022-08-22 19:28:50 INFO-Parameters loaded successfully.
+2022-08-22 19:28:50 INFO-Model loaded successfully!.
+2022-08-22 19:28:51 INFO-tfidf vectorization loaded successfully!.
+2022-08-22 19:28:51 INFO-label_encoder loaded successfully!.
+2022-08-22 19:28:51 WARNING- * Debugger is active!
+2022-08-22 19:28:51 INFO- * Debugger PIN: 598-526-621
+2022-08-22 19:28:51 INFO-127.0.0.1 - - [22/Aug/2022 19:28:51] "GET / HTTP/1.1" 200 -
+2022-08-22 19:29:00 INFO-Text representation have done.
+2022-08-22 19:29:00 INFO-Model has predicted successfully!.
+2022-08-22 19:29:00 INFO-Output have printed on webpage.
+2022-08-22 19:29:00 INFO-127.0.0.1 - - [22/Aug/2022 19:29:00] "POST /predict HTTP/1.1" 200 -
